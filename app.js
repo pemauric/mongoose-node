@@ -1,9 +1,9 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 //const db = require('./db/conn'); 
-const port = 3000
+const port = 5000
 
-const productRoutes = require('./routes/products.routes');
+const productEvent = require('./routes/event.routes');
 
 const app = express();
 
@@ -17,7 +17,7 @@ app.use(express.urlencoded({
 }))
 app.use(express.json());
 
-app.use('/', productRoutes)
+app.use('/', eventRoutes)
 
 
 app.listen(port, () => {
