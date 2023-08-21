@@ -6,13 +6,13 @@ const db = require('../db/conn');
 module.exports = class EventController {
     
     static async showEvents (req, res){
-        
-    }
-
-    static createEvent (req, res) {
-        
+        res.render('home')
     }
     
+    static createEvent (req, res) {
+        res.render('createEvent')
+    }
+    /*
     static createEventPost (req, res) {
         
     }
@@ -33,6 +33,6 @@ module.exports = class EventController {
     static async updateEventPost (req, res) { 
         
         
-    }
+    }*/
 
 }
