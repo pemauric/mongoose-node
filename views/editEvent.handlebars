@@ -2,17 +2,21 @@
 <div class="form-container">
     <form action="/edit" method="POST">
     <div class="form-control">
-        <input type="hidden" name="id" value="{{product._id}}">
+        <input type="hidden" name="id" value="{{event._id}}">
         <label for="name"> Nome do produto: </label>
-            <input type="text" placeholder="Digite o nome do produto" name="name" value="{{product.name}}">
+            <input type="text" placeholder="Digite o nome do produto" name="name" value="{{event.name}}">
         </div>
         <div class="form-control">
             <label for="description">Descricao: </label>
-            <input type="description" placeholder="Digite a descricao do produto" name="description" value="{{product.description}}">
+            <input type="description" placeholder="Digite a descricao do produto" name="description" value="{{event.description}}">
         </div>
         <div class="form-control">
             <label for="price">Preco: </label>
-            <input type="text" value="{{product.price}}" placeholder="Digite o preco do produto" name="price">
+            <input type="text" value="{{event.price}}" placeholder="Digite o preco do produto" name="price">
+        </div>
+        <div class="form-control">
+            <label for="image">Link da imagem: </label>
+            <input type="text" placeholder="Insira a url da imagem" name="image" value="{{event.image}}">
         </div>
         <div class="form-control">
             <button type="submit" class="btnProduct-edit">Editar</button>
