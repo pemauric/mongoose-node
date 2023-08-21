@@ -1,18 +1,16 @@
+const Event = require("../models/Event");
 
-const Event  = require('../models/Event')
-
-const db = require('../db/conn');
+const db = require("../db/conn");
 
 module.exports = class EventController {
-    
-    static async showEvents (req, res){
-        res.render('home')
+    static async showEvents(req, res) {
+        res.render("home");
     }
-    
-    static createEvent (req, res) {
-        res.render('createEvent')
+
+    static createEvent(req, res) {
+        res.render("createEvent");
     }
-    /*
+/*
     static createEventPost (req, res) {
         
     }
@@ -34,5 +32,4 @@ module.exports = class EventController {
         
         
     }*/
-
-}
+};
